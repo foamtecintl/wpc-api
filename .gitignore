@@ -1,0 +1,16 @@
+# ignore case
+*.tar
+*.zip
+*.rar
+*.bat
+*.sh
+*.exe
+database.sqlite
+fileUploads
+.DS_Store
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
