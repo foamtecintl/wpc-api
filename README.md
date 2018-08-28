@@ -12,9 +12,6 @@ go get -u github.com/go-sql-driver/mysql
 # build api for production
 go build -o example.sh main.go
 
-# run unit & end-to-end tests
-npm test
-
 ```
 
 ---
