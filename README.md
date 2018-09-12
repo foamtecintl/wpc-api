@@ -14,4 +14,6 @@ go build -o example.sh main.go
 
 ```
 
+#### Database MariaDB only
+
 ---
