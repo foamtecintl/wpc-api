@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mdb:
+    image: mariadb:latest
+    container_name: maria_database
+    command: --character-set-server=utf8
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - /Users/koliky/Workspace/temp/database:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=rklg;bf
+      - MYSQL_DATABASE=foamtec
+      - MYSQL_USER=wpc
+      - MYSQL_PASSWORD=pppassword
+
+  pma:
+    depends_on:
+      - mdb
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mdb:db
+    ports:
+      - "8001:80"
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=rklg;bf

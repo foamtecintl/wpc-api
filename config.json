@@ -1,0 +1,5 @@
+{
+    "port": "8081",
+    "database": "wpc:pppassword@tcp(localhost:3306)/foamtec",
+    "secretKey": "secretFOAMTEC"
+}
